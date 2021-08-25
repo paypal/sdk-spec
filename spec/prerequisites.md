@@ -1,4 +1,4 @@
-# Prerequesites
+# Prerequisites
 
 Before integrating with the PayPal Android or iOS SDKs, you will first need to set up authorization. 
 
