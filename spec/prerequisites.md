@@ -4,7 +4,7 @@ Before integrating with the PayPal Android or iOS SDKs, you will first need to s
 
 ### PayPal Developer Account
 
-The PayPal SanbCreate a free PayPal Developer Account by selecting `Log in to Dashboard` on the [PayPal Developer site](https://developer.paypal.com/home/)
+Create a free PayPal Developer Account by selecting `Log in to Dashboard` on the [PayPal Developer site](https://developer.paypal.com/home/)
 
 ### Sandbox Test Application
 
