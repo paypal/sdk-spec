@@ -4,7 +4,7 @@ Before integrating with the PayPal Android SDK, you will first need to set up au
 
 ### PayPal Developer Account
 
-Create a free PayPal Developer Account by selecting `Log in to Dashboard` on the [PayPal Developer site](https://developer.paypal.com/home/) and logging in with your PayPal account.
+Create a free PayPal Developer Account by selecting `Log in to Dashboard` on the [PayPal Developer site](https://developer.paypal.com/home/).
 
 ### Get API Credentials
 
@@ -12,8 +12,8 @@ Your API credentials are a `client ID` and `secret`, which authenticate API requ
 - Log in to the Developer Dashboard with the account created above.
 - Under the `DASHBOARD` menu, select `My Apps & Credentials`.
 - Make sure you're on the Sandbox tab to get the API credentials you'll use while you're developing code. After you test and before you go live, switch to the Live tab to get live credentials.
-- In the `REST API apps` section in the `App Name` column, select `Default Application`, which PayPal creates with a new Developer Dashboard account. 
-- The `Default Application` details page displays your API credentials, including your `client ID` and `secret`.
+- In the `REST API apps` section in the `App Name` column, select `Default Application`, which PayPal creates with a new Developer Dashboard account. If `Default Application` does not exist, select `Create App` to create a new test application.
+- The application details page displays your API credentials, including your `client ID` and `secret`.
 
 ### Generate Access Token
 
