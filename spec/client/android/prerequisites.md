@@ -30,7 +30,7 @@ curl -v POST https://api-m.sandbox.paypal.com/v1/oauth2/token \
 
 ### Unbranded Cards
 
-In order to accept unbranded card payments in your application, a few additional setup steps are needed.
+To accept unbranded card payments in your application, a few additional setup steps are required.
 
 #### Enable Advanced Card Payment Processing
 
