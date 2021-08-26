@@ -17,7 +17,7 @@ Your API credentials are a `client ID` and `secret`, which authenticate API requ
 
 ### Generate Access Token
 
-Exchange your app's `client ID` and `secret` for an access token used to initiate the SDK.
+Use your app's `client ID` and `secret` to acquire an access token:
 
 Modify the following code by changing `CLIENT_ID` to your client ID and `SECRET` to your secret:
 ```bash
