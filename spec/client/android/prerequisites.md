@@ -11,7 +11,7 @@ Create a free PayPal Developer Account by selecting `Log in to Dashboard` on the
 Your API credentials are a `client ID` and `secret`, which authenticate API requests from your account. To get these credentials:
 - Log in to the Developer Dashboard with the account created above.
 - Under the `DASHBOARD` menu, select `My Apps & Credentials`.
-- Make sure you're on the Sandbox tab to get the API credentials you'll use while you're developing code. After you test and before you go live, switch to the Live tab to get live credentials.
+- Make sure you're on the Sandbox tab to get API credentials for PayPal's development environment. After you test and verify your app's integration, switch to the Live tab to get credentials for production. 
 - In the `REST API apps` section in the `App Name` column, select `Default Application`, which PayPal creates with a new Developer Dashboard account. If `Default Application` does not exist, select `Create App` to create a new test application.
 - The application details page displays your API credentials, including your `client ID` and `secret`.
 
