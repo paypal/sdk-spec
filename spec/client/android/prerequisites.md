@@ -39,5 +39,5 @@ Follow the instructions [here](https://developer.paypal.com/docs/business/checko
 #### Sandbox Test Application
 
 Create a new Sandbox application within your PayPal Developer Account by selecting `Create App` in the `REST API apps` section. 
-In order to process unbranded card payments, the application type for your sandbox application must be `Platform`.
+To process unbranded card payments, set the application type to `Platform`.
 
