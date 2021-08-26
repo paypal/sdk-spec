@@ -10,7 +10,7 @@ for (const path of findAllFiles(SPEC_ROOT, SPEC_EXTENSION)) {
 
         for (const href of markdownGetAllLinks(node)) {
             if (href.indexOf('.') === 0 || href.indexOf('/') === 0) {
-                const fullPath = join(dirname(path), href);
+                const [ fullPath, hash ] = join(dirname(path), href).split('#');
 
                 if (!existsSync(fullPath)) {
                     throw new Error(`File does not exist: ${ fullPath }`);
@@ -18,6 +18,21 @@ for (const path of findAllFiles(SPEC_ROOT, SPEC_EXTENSION)) {
 
                 if (!fullPath.endsWith(`.${ SPEC_EXTENSION }`)) {
                     throw new Error(`Not a .${ SPEC_EXTENSION } file: ${ fullPath }`);
+                }
+
+                if (hash) {
+                    const linkPageNode = markdownParseFile(fullPath);
+
+                    let found = false;
+                    for (const header of markdownGetAllHeaders(linkPageNode)) {
+                        if (dasherize(header) === hash) {
+                            found = true;
+                        }
+                    }
+
+                    if (!found) {
+                        throw new Error(`Could not find header with id #${ hash } in ${ fullPath }`);
+                    }
                 }
             }
 
@@ -30,7 +45,7 @@ for (const path of findAllFiles(SPEC_ROOT, SPEC_EXTENSION)) {
                 }
 
                 if (!found) {
-                    throw new Error(`Could not find header with id ${ href } in page`);
+                    throw new Error(`Could not find header with id ${ href } in ${ path }`);
                 }
             }
         }
