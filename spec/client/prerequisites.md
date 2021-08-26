@@ -8,7 +8,7 @@ Create a free PayPal Developer Account by selecting `Log in to Dashboard` on the
 
 ### Get API Credentials
 
-Your API credentials are a `client ID` and `secret`, which authenticate API requests from your account. To get these credentials:
+Your API credentials are a `client ID`, which authenticate API requests from your account. To get the credentials:
 - Log in to the Developer Dashboard with the account created above.
 - Under the `DASHBOARD` menu, select `My Apps & Credentials`.
 - Make sure you're on the Sandbox tab to get API credentials for PayPal's development environment. After you test and verify your app's integration, switch to the Live tab to get credentials for production. 
@@ -17,14 +17,13 @@ Your API credentials are a `client ID` and `secret`, which authenticate API requ
 
 ### Generate Access Token
 
-Use your app's `client ID` and `secret` to acquire an access token:
+Use your app's `client ID` to acquire an access token:
 
-Modify the following code by changing `CLIENT_ID` to your client ID and `SECRET` to your secret:
 ```bash
 curl -v POST https://api-m.sandbox.paypal.com/v1/oauth2/token \
   -H "Accept: application/json" \
   -H "Accept-Language: en_US" \
-  -u "CLIENT_ID:SECRET" \
+  -u "<CLIENT_ID>" \
   -d "grant_type=client_credentials"
 ```
 
