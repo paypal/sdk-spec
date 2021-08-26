@@ -34,7 +34,7 @@ In order to accept unbranded card payments in your application, a few additional
 
 #### Enable Advanced Card Payment Processing
 
-Follow the instructions [here](https://developer.paypal.com/docs/business/checkout/advanced-card-payments/#1-enable-your-account) to request advanced debit and credit card processing for your account. This request will be automatically approved for sandbox.
+Follow the instructions [here](https://developer.paypal.com/docs/business/checkout/advanced-card-payments/#1-enable-your-account) to request advanced debit and credit card processing for your account. This request will be automatically approved for the Sandbox environment.
 
 #### Sandbox Test Application
 
