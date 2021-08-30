@@ -24,7 +24,7 @@ This SDK supports:
 
 ## Modularity
 
-The PayPal iOS SDK is comprised of various submodules.
+The PayPal iOS SDK is comprised of various submodules:
 * `Card`
 * `PayPal`
 * ...
