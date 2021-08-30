@@ -9,7 +9,7 @@ The PayPal Android SDK is available for Android SDK 21+. See our [Client Depreca
 This SDK is written in Kotlin and supports both Kotlin and Java integrations. See the [Java Demo App](<!-- TODO: link Java Demo app when created -->) and [Kotlin Demo App](https://github.com/paypal/Android-SDK/tree/main/Demo) for sample integrations. 
 
 ## Prerequisites
-To use the PayPal Android SDK, you'll first need to [set up a PayPal Developer Account](https://github.com/paypal/paypal-sdk-spec/blob/main/spec/client/prerequisites.md#paypal-developer-account) and [obtain a `client ID`](https://github.com/paypal/paypal-sdk-spec/blob/main/spec/client/prerequisites.md#get-api-credentials).
+To use the PayPal Android SDK, you'll first need to [set up a PayPal Developer Account](../prerequisites.md#paypal-developer-account) and [obtain a `client ID`](../prerequisites.md#get-api-credentials).
 
 ## Including the SDK
 You can support a specific payment method by adding its corresponding feature module as a dependency in your app's `build.gradle` file.
