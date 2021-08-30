@@ -15,17 +15,7 @@ Your API credentials are a `client ID`, which authenticate API requests from you
 - In the `REST API apps` section in the `App Name` column, select `Default Application`, which PayPal creates with a new Developer Dashboard account. If `Default Application` does not exist, select `Create App` to create a new test application.
 - The application details page displays your API credentials, including your `client ID` and `secret`.
 
-### Generate Access Token
-
-Use your app's `client ID` to acquire an access token:
-
-```bash
-curl -v POST https://api-m.sandbox.paypal.com/v1/oauth2/token \
-  -H "Accept: application/json" \
-  -H "Accept-Language: en_US" \
-  -u "<CLIENT_ID>" \
-  -d "grant_type=client_credentials"
-```
+Use this `client ID` when initializing the SDK.
 
 ### Unbranded Cards
 
