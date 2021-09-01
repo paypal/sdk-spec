@@ -124,7 +124,7 @@ return (
 
 #### Vue
 
-```javascript
+```vue
 <paypal-component foo='bar'></paypal-component>
 ```
 

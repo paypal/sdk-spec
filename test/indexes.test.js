@@ -1,7 +1,7 @@
 
 const { join, dirname } = require('path');
 const { existsSync, readdirSync, lstatSync } = require('fs-extra');
-const { findAllDirectories, markdownParseFile, markdownGetAllLinks } = require('./util');
+const { findAllDirectories, markdownParseFile, getAllLinks } = require('./util');
 const { SPEC_ROOT, SPEC_EXTENSION, SPEC_INDEX } = require('./constants');
 
 for (const path of findAllDirectories(SPEC_ROOT)) {
@@ -14,7 +14,7 @@ for (const path of findAllDirectories(SPEC_ROOT)) {
         }
 
         const fileNames = readdirSync(path);
-        const indexLinks = markdownGetAllLinks(markdownParseFile(indexPath));
+        const indexLinks = getAllLinks(markdownParseFile(indexPath));
 
         for (const fileName of fileNames) {
             if (fileName == indexFile) {
