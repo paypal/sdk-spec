@@ -21,6 +21,16 @@ struct PaymentsConfiguration {
 let config = PaymentsConfiguration(clientId: "ABCD1234")
 ```
 
+```kotlin
+data class PaymentsConfiguration(
+    val clientId: String,
+    val merchantId: String? = null,
+    val environment: Environment = Environment.SANDBOX
+)
+
+val configuration = PaymentsConfiguration(clientId = "clientId")
+```
+
 This configuration object is shared across all the modules of the PayPal iOS SDK. It contains the information that is needed across the modules to execute a transaction (except for the order information). The information  passed into a configuration object should be known to the merchant at the beginning of their app lifecycle and would be static across transaction sessions
 
 ### Initialize the Module Client
