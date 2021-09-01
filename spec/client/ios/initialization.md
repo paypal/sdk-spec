@@ -9,7 +9,7 @@ The functionality of the SDK is split between a number of merchant facing module
 
 The first step in initializing any module of the SDK would be to create an instance of a `PaymentsConfiguration`.
 
-```swift=
+```swift
 struct PaymentsConfiguration {
     let clientId: String
     let merchantId: String? = nil
@@ -27,7 +27,7 @@ This configuration object is shared across all the modules of the PayPal iOS SDK
 
 The PayPal SDK uses root client objects to facilitate communication between the integrating application and the SDK. Whichever payment method you wish to use, you can create an instance of the root client object using the shared configuration object
 
-```swift=
+```swift
 import PayPalCard
 
 // Configuration object to whole
