@@ -28,7 +28,7 @@ data class PaymentsConfiguration(
     val environment: Environment = Environment.SANDBOX
 )
 
-val configuration = PaymentsConfiguration(clientId = "clientId")
+val configuration = PaymentsConfiguration(clientId = "ABCD1234")
 ```
 
 This configuration object is shared across all the modules of the PayPal iOS SDK. It contains the information that is needed across the modules to execute a transaction (except for the order information). The information  passed into a configuration object should be known to the merchant at the beginning of their app lifecycle and would be static across transaction sessions
@@ -54,6 +54,27 @@ cardClient.checkout(withRequest: cardRequest, orderID: orderID) { result in
         // merchant is able to authorize / capture the order ID here
     case .failure(let error):
         // process the error here
+    }
+}
+```
+
+```kotlin
+val config = PaymentsConfiguraton(clientId = "ABCD1234")
+val cardClient = CardClient(config = config)
+
+val card = Card(number = 4111, cvv: ...)
+val cardRequest = CardRequest(card = card)
+
+cardClient.checkout(cardRequest, orderID) { result ->
+    when (result.status) {
+        SUCCESS -> {
+            // merchant is able to authorize / capture the order ID here
+            val orderId = result.orderId
+        }
+        FAILURE -> {
+            // process the error here
+            val error = result.error
+        }
     }
 }
 ```
