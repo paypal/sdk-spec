@@ -62,7 +62,7 @@ cardClient.checkout(withRequest: cardRequest, orderID: orderID) { result in
 val config = PaymentsConfiguraton(clientId = "ABCD1234")
 val cardClient = CardClient(config = config)
 
-val card = Card(number = 4111, cvv: ...)
+val card = Card(number = 4111, cvv = ...)
 val cardRequest = CardRequest(card = card)
 
 cardClient.checkout(cardRequest, orderID) { result ->
