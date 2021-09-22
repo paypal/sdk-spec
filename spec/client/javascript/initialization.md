@@ -384,5 +384,21 @@ Pass to enable 3DS for unbranded payment flows
 
 ## NPM Module
 
-- __TBD__
-- https://github.com/paypal/paypal-sdk-spec/discussions/10
+```sh
+npm install @paypal/paypal-js
+```
+
+```js
+import { loadScript } from "paypal";
+
+const configuration = {
+  clientID: '<YOUR_CLIENT_ID>',
+};
+
+try {
+  await loadScript(configuration)
+} catch(error) {
+  console.error(error);
+}
+```
+

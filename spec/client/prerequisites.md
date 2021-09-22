@@ -1,12 +1,12 @@
 # Prerequisites
 
-Before integrating with the PayPal Android or iOS SDK, you will first need to set up authorization. 
+Before integrating with the PayPal Android, iOS, or Web SDKs, you will first need to set up authorization. 
 
-### PayPal Developer Account
+## PayPal Developer Account
 
 Create a free PayPal Developer Account by selecting `Log in to Dashboard` on the [PayPal Developer site](https://developer.paypal.com/home/).
 
-### Get API Credentials
+## Get API Credentials
 
 Your API credentials are a `client ID`, which authenticate API requests from your account. To get the credentials:
 - Log in to the Developer Dashboard with the account created above.
@@ -17,16 +17,20 @@ Your API credentials are a `client ID`, which authenticate API requests from you
 
 Use this `client ID` when initializing the SDK.
 
-### Unbranded Cards
+## Unbranded Cards
 
 To accept unbranded card payments in your application, a few additional setup steps are required.
 
-#### Enable Advanced Card Payment Processing
+### Enable Advanced Card Payment Processing
 
 Follow the instructions [here](https://developer.paypal.com/docs/business/checkout/advanced-card-payments/#1-enable-your-account) to request advanced debit and credit card processing for your account. This request will be automatically approved for the Sandbox environment.
 
-#### Sandbox Test Application
+### Sandbox Test Application
 
 Create a new Sandbox application within your PayPal Developer Account by selecting `Create App` in the `REST API apps` section. 
 To process unbranded card payments, set the application type to `Platform`.
 
+## Getting Started Specs
+- [Android Getting Started](./android/GETTING_STARTED.md)
+- [iOS Getting Started](./ios/GETTING_STARTED.md)
+- [Web Getting Started](./javascript/GETTING_STARTED.md)
